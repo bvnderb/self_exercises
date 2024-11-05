@@ -10,15 +10,29 @@
 
     <!-- Link one or the other - AVOID using both!!! (Tailwind OR Bootstrap) -->
     <!-- Link Tailwind CSS to the HTML -->
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
 
     <!-- Linking Bootstrap to the HTML -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Linking the css stylesheet to the HTML  -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div id="dateresult" style="color:red; font-size: 50px;">
+            <h1></h1>
+            <hr>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example>">
+                <button type="button" class="btn btn-danger">month</button>
+                <button type="button" class="btn btn-warning">5</button>
+                <button type="button" class="btn btn-success">2024</button>
+
+
+            </div>
+            <input id="myvalue" type="text" class="form-control mb-3">
+            <button id="submit" class="btn btn-danger">SUBMIT</button>
+        </div>
+    </div>
 </body>
 </html>

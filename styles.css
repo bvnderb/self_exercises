@@ -1,0 +1,62 @@
+/* common used Tailwind CSS classes: 
+
+1.	Background and Text Colors:
+•	`bg-white`, `bg-gray-200`, `bg-blue-500`: Set background colors.
+•	`text-black`, `text-gray-700`, `text-blue-500`: Set text colors.
+2.	Padding and Margin:
+•	`p-4`, `px-2`, `py-1`: Set padding on all sides or specific axes.
+•	`m-4`, `mx-auto`, `my-2`: Set margin on all sides or specific axes.
+3.	Flexbox Utilities:
+•	`flex`, `flex-row`, `flex-col`: Define flex containers and direction.
+•	`items-center`, `justify-between`: Align items within a flex container.
+4.	Border and Shadow:
+•	`border`, `border-gray-300`: Add borders with optional color.
+•	`rounded-md`, `rounded-lg`: Add rounded corners.
+•	`shadow-md`, `shadow-lg`: Apply shadow effects.
+5.	Typography:
+•	`font-bold`, `font-medium`: Set font weight.
+•	`text-xl`, `text-3xl`: Define font size.
+6.	Hover and Transition Effects:
+•	`hover:bg-gray-300`: Change background color on hover.
+•	`transition-transform`, `duration-300`: Apply transitions for smooth effects.
+7.	Responsive Design:
+•	Tailwind uses responsive prefixes like `sm:`, `md:`, and `lg:` to apply styles at different breakpoints, 
+such as `sm:text-sm` or `lg:flex`.
+
+common used Bootstrap classes:
+
+1.	Containers:
+•	`.container`: Creates a responsive fixed-width container.
+•	`.container-fluid`: Creates a full-width container that spans the entire width of the viewport.
+2.	Grid System:
+•	`.row`: Defines a row in the grid system.
+•	`.col`, `.col-sm-*`, `.col-md-*`, `.col-lg-*`, `.col-xl-*`: Define columns with different breakpoints for 
+responsive layouts.
+3.	Buttons:
+•	`.btn`: Base class for buttons.
+•	`.btn-primary`, `.btn-secondary`, `.btn-success`, `.btn-danger`, `.btn-warning`, `.btn-info`, `.btn-light`, 
+`.btn-dark`: Various button styles based on color themes.
+4.	Typography and Text Utilities:
+•	`.text-center`, `.text-left`, `.text-right`: Align text.
+•	`.font-weight-bold`, `.font-weight-normal`: Set font weight.
+5.	Background Colors:
+•	`.bg-primary`, `.bg-secondary`, `.bg-success`, `.bg-danger`, `.bg-warning`, `.bg-info`: Set background colors 
+using Bootstrap’s theme colors.
+6.	Cards:
+•	`.card`: Base class for card components.
+•	`.card-body`, `.card-title`, `.card-text`: Structure card content.
+7.	Forms and Inputs:
+•	`.form-control`: Styles input elements.
+•	`.input-group`, `.input-group-append`, `.input-group-prepend`: Create input groups.
+8.	Navigation Bars:
+•	`.navbar`, `.navbar-expand-lg`, `.navbar-light`, `.navbar-dark`: Create responsive navigation bars with 
+different styles.
+9.	Utilities for Spacing and Alignment:
+•	`.m-*`, `.p-*` (e.g., `m-3`, `p-2`): Set margin and padding.
+•	`.align-items-center`, `.justify-content-between`: Align items within flex containers.
+*/
+
+.stylish-class {
+    color: blue;
+    font-size: 50px;
+}
