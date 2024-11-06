@@ -29,8 +29,9 @@ function getUserInput() {
     else {
         console.log("One or both inputs are not numbers. Cannot proceed.") // logs a message to the console on error.
         calcResult.innerHTML = `<h1>Make sure your input values are numbers!</h1>`
+        return null; // Return null to indicate an error
     }
-    return null; // Return null to indicate an error
+    
 }
 
 function plusCalculator() {
