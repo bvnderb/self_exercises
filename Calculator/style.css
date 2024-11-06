@@ -1,0 +1,8 @@
+.btn {
+    margin-right: 100px;
+    align-items: center;
+}
+
+.d-flex {
+    justify-content: flex-start; /* Align items at the start */
+}
