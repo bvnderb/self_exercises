@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() { // Ensures the function is called after Dom is loaded
+    
+    getUserInput(); // added the function for the user Input
     plusCalculator(); // added the function for the plus calculator
     minusCalculator(); // added the function for the minus calculator
     multiplyCalculator(); // added the function for the multiply calculator
     divisionCalculator(); // added the function for the division calculator
-    getUserInput();
+    
 
 });
 // function to check the userInput since its the same for all other functions.
