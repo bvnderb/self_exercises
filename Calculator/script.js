@@ -16,7 +16,7 @@ function getUserInput() {
 
     // Convert inputs to numbers
     let num1 = parseFloat(firstinput);
-    let num2 = parseFloat(secondinput)
+    let num2 = parseFloat(secondinput);
 
     // Get the result element
     let calcResult = document.getElementById('calcResult');
