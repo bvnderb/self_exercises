@@ -19,59 +19,59 @@
 </head>
 
 <body>
-    <div class="container p-2">
-        <form>
-            <h1 class="p-2 text-4xl">Place your order below!</h1>
-            <hr>
-            <div class="flex justify-content-between p-3">
-                <input type="text" id="amountCevapi" placeholder="Amount">
-                <p class="p-2">Cevapi</p>
-            </div>
-            <div class="flex justify-content-between p-3">
-                <input type="text" id="amountSauce" placeholder="Amount">
-                <p class="p-2">Sauce</p>
-            </div>
-            <div class="justify-content-between flex">
-                <input type="checkbox"id="checkBoxDelivery" class="flex justify-content-between p-3">
+    <div class="container p-2" id="orderField">
+        <div class="orderformBG">
+            <form>
+                <h1 class="p-2 text-4xl">Place your order below!</h1>
+                <hr>
+                <div class="flex justify-content-between p-3">
+                    <input type="text" id="amountCevapi" placeholder="Amount">
+                    <p class="p-2">Cevapi</p>
+                </div>
+                <div class="flex justify-content-between p-3">
+                    <input type="text" id="amountSauce" placeholder="Amount">
+                    <p class="p-2">Sauce</p>
+                </div>
+                
+            </form>
+            <div class="justify-content-between flex pt-2 pb-3">
+                <input type="checkbox" id="checkBoxDelivery" class="flex justify-content-between p-3">
                 <label for="checkBoxDelivery">Delivery</label>
             </div>
-            
-            <hr>
-        </form>
-        <h1 class="p-2" >Pricelist</h1>
-        <hr>
-        <div id="priceList" class="border-solid border-white">
-            <div class="mb-3">
-                <table class="w-px-5" id="tablePriceList">
-                    <tr>
-                        <td>Cevapi:</td>
-                        <td>€ 9.00</td>
-                    </tr>
-                    <tr>
-                        <td>Sauce:</td>
-                        <td>€ 5.00</td>
-                    </tr>
-                    <tr>
-                        <td>Delivery:</td>
-                        <td>€ 5.00</td>
-                    </tr>
-                </table>
+            <hr id="ofLine">
+            <h1 class="p-2 text-2xl">Pricelist</h1>
+            <div id="priceList" class="border-solid border-white">
+                <div class="mb-3">
+                    <table class="w-px-5" id="tablePriceList">
+                        <tr>
+                            <td>Cevapi:</td>
+                            <td>€ 9.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sauce:</td>
+                            <td>€ 5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery:</td>
+                            <td>€ 5.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="submit_btn pt-2 id="order">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="submitBtn"
+                    value="Submit">
+                    Submit
+                </button>
+            </div>
+            <hr id="plLine">
+            <div class="pt-2">
+                <h1>
+                    <p>Your total cost is:</p>
+                    <h1 id="totalCost"></h1>
+                </h1>
             </div>
         </div>
-        
-        <hr>
-        <div class="submit_btn id=" order">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="submitBtn" value="Submit">
-                Submit
-            </button>
-        </div>
-        <hr>
-       <div>
-        <h1>
-            <p>Your total cost is:</p>
-            <h1 id="totalCost"></h1>
-        </h1>
-       </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,19 +1,18 @@
-.container {
+body {
     background-image: url("img/Cevapi1.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-img {
-    opacity: 0.5;
+    z-index: 0;
 }
 
 ::placeholder {
     color: gray;
+    z-index: 2;
 }
 
 .tablePriceList {
     column-gap: 10px;
+    z-index: 2;
 }
 
 #amountSauce,
@@ -24,26 +23,54 @@ img {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 #checkBoxDelivery {
     justify-content: space-between;
     margin-left: 15px;
+    z-index: 2;
+}
+
+#orderField {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.orderformBG {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    width: 340px;
+    z-index: 0;
+    min-height: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
 }
 
 label {
     margin-left: 10px;
-}
-
-body {
-    color: whitesmoke;
+    z-index: 2;
 }
 
 hr {
     border: transparent;
 }
 
-.priceList {
-    border-radius: 20%;
-    border-color: black;
+#tablePriceList {
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+h1,
+p {
+    z-index: 2;
+}
+
+#plLine, #ofLine {
+    border: none;
+    height: 5px;
+    background-color: white;
+    margin: 20px 0;
 }
