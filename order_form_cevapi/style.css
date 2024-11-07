@@ -1,3 +1,22 @@
+.container {
+    background-image: url("img/Cevapi1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+img {
+    opacity: 0.5;
+}
+
 body {
-    background-image: ;
+    color: whitesmoke;
+}
+
+hr {
+    border: transparent;
+}
+
+.priceList {
+    border-radius: 20%;
+    border-color: black;
 }
