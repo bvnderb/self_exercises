@@ -8,6 +8,33 @@ img {
     opacity: 0.5;
 }
 
+::placeholder {
+    color: gray;
+}
+
+.tablePriceList {
+    column-gap: 10px;
+}
+
+#amountSauce,
+#amountCevapi {
+    color: black;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#checkBoxDelivery {
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+label {
+    margin-left: 10px;
+}
+
 body {
     color: whitesmoke;
 }
