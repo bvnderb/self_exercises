@@ -6,8 +6,9 @@ const userInput = document.getElementById('userInput');
 const userList = document.getElementById('userList');
 
 addBtn.addEventListener('click', addUser);
-arrayBtn.addEventListener('click', arrayView);
 capitalize.addEventListener('click', capitalizeInput);
+arrayBtn.addEventListener('click', arrayView);
+
 
 function addUser() {
 
@@ -26,17 +27,17 @@ function addUser() {
 function capitalizeInput() {
     const userTemp = userInput.value;
     console.log("Add button clicked", userTemp);
-    
+
     if (userTemp) { // Check if input is not empty
         // Capitalize the first character and concatenate with the rest of the string
         let capitalizedUser = `<span class="capitalized">${userTemp.charAt(0).toUpperCase()}</span>${userTemp}`;
-        
+
         // Add the capitalized string to the array
         userArray.push(capitalizedUser);
 
         // Update the display with both original and capitalized text on the same line
         userList.innerHTML += `${capitalizedUser}<br>`;
-        
+
         // Clear input field after adding
         userInput.value = '';
     }
