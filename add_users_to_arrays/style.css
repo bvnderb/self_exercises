@@ -2,3 +2,12 @@ body {
     margin: 20px;
 }
 
+.capitalized {
+    color: whitesmoke;
+    font-size: 2rem;
+    font: bold;
+    background-color: blue;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
