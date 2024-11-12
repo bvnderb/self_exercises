@@ -1,5 +1,4 @@
 const btn = document.getElementById('submitBtn');
-// const usn = document.getElementById('getName').value;
 
 btn.addEventListener('click',function(){
     const usn = document.getElementById('getName').value;
@@ -16,9 +15,14 @@ btn.addEventListener('click',function(){
 // function to take values from name and number
 // and print this on screen (innerHTML)
 
-// arrow function for text goes here 
+// arrow function - easy (by Wim)
+
+const santaMessage = (name, gifts) => {
+    return `Ho ho ho! ${name} has been good and gets ${gifts} presents!`;
+}
+let myMessage = santaMessage("Brent", 12);
+console.log(myMessage);
 
 
-
-// arrow function for random number - trial
+   
 
