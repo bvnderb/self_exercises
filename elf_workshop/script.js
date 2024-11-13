@@ -13,3 +13,26 @@
             */
 
 
+const paintToy = color => {
+    let paintedToys = 0
+    // paint toys with given color
+    // update paintedToys variable
+    return paintedToys;
+}
+
+const assembleToys = parts => {
+    let assembledToys = 0
+    // 
+    // 
+    return assembledToys;
+}
+
+const qualityCheck = toy => {
+    if (toy.color !== 'red') {
+        throw new Error(`Toy color (${toy.color}) is not approved.`);
+    }
+    if (toy.parts.length !== 10) {
+        throw new Error(`Toy is missing parts (expected 10, got ${toy.parts.length})`);
+    }
+    return true;
+}
