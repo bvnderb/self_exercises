@@ -8,8 +8,8 @@ document.getElementById('shinyButton').addEventListener('click', function () {
 
 async function pokeFetch(isShiny) {
     try {
-        const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+        const pokemonInput = document.getElementById('pokemonInput').value.toLowerCase();
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonInput}`);
 
         if (!response.ok) {
             throw new Error('No response received. Try again later');
@@ -17,11 +17,13 @@ async function pokeFetch(isShiny) {
 
         const data = await response.json();
         const pokemonSprite = isShiny ? data.sprites.front_shiny : data.sprites.front_default;
-
+        const pokeName = data.name;
+        const pokemonId = data.id;
+        
+        document.getElementById('pokemonId').textContent = `# ${pokemonId}`;
+        document.getElementById('pokemonName').textContent = `${pokeName.toUpperCase()}`;
 
         const imgElement = document.getElementById('pokemonSprite');
-
-
 
         imgElement.src = pokemonSprite;
         imgElement.style.display = "block";
